@@ -1,0 +1,20 @@
+{
+  "license": "MIT",
+  "private": true,
+  "name": "bun-ludo-server",
+  "module": "index.ts",
+  "scripts": {
+    "start": "bun ./server.ts",
+    "dev": "bun --hot ./server.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "peer": "^1.0.1"
+  }
+}

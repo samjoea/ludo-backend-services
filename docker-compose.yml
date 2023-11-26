@@ -1,0 +1,23 @@
+version: '3'
+services:
+  gunDB:
+    build: 
+      context: ./gun-server
+      dockerfile: Dockerfile
+    ports:
+      - "8374:8374"
+  peerJS:
+    depends_on:
+      - bunWs
+    restart: always
+    build: 
+      context: ./peer-server
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+  bunWs:
+    build: 
+      context: ./bun-server
+      dockerfile: Dockerfile
+    ports:
+      - "9001:9001"
