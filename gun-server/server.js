@@ -10,7 +10,8 @@ app.use(GUN.serve);
 const server = app.listen(gunPort, () => {
 	console.log("gun running on port ", gunPort, ' on ', NODE_ENV);
 });
-const gun = GUN({
+GUN({
 	web: server,
 	file: "data",
+	axe: false,
 });
