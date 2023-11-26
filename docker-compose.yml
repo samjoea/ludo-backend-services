@@ -5,7 +5,7 @@ services:
       context: ./gun-server
       dockerfile: Dockerfile
     ports:
-      - "8374:8374"
+      - "8765:8765"
   peerjs:
     depends_on:
       - bunwss

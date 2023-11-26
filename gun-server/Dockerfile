@@ -10,6 +10,6 @@ COPY . .
 
 ENV NODE_ENV production
 
-EXPOSE 8374
+EXPOSE 8765
 
 CMD [ "yarn", "start" ]

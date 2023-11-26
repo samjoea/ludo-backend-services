@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const NODE_ENV = process.env.NODE_ENV ?? "development";
-const gunPort = process.env.GUN_PORT ?? 8374;
+const gunPort = process.env.GUN_PORT ?? 8765;
 
 app.use(cors());
 app.use(GUN.serve);
